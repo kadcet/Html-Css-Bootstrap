@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display: flex;
+
+            
+
+            /* ***************   YATAYDA justify-content **************/
+
+            /* yatada hizalama  ortada olur */
+            /* justify-content: center; */
+
+            /* sayfanın sol başından başlar sıralamaya.default özelliğidir */
+            /* justify-content: flex-start; */
+
+             /* sayfanın sağ başından başlar sıralamaya. */
+            /* justify-content: flex-end; */
+           
+            /* sol baştan x diğerleri ile arasında 2x boşluk bırakır */
+            /* justify-content: space-around; */
+
+            /* sağ-soldan BOŞLUK YOK.aradaki boşluklar eşit şekilde yapılır */
+            /* justify-content: space-between; */
+
+            /* baştan sona HERYERE eşit boşuk verir */
+            /* justify-content: space-evenly; */
+
+
+            /* *******************   DİKEYDE  align-items   ***************** */
+
+
+            /* container yükseliği kadar */
+            /* align-items: stretch; */
+
+            /* yükseliğin üstüne */
+            /* align-items: flex-start; */
+
+            /* yüksekliğin en altına */
+            /* align-items: flex-end; */
+
+            /* tam ortada */
+            /* align-items: center; */
+
+
+
+            /* NOT: flex-direction: column; yaparsak tam tersi olacak */
+
+            flex-direction:column ;
+
+            /* sütunlar sola yaslı olur*/
+            align-items: flex-start;
+
+            /* dikey olarak aşağı doğru alt-üst dahil eşit mesafe verir */
+            justify-content: space-evenly;
+
+            /* alt üst YOK eşit mesafe boşluk */
+            /* justify-content: space-between; */
+
+
+            height: 500px;
+            background-color: #034f84;
+            /* padding:15px ; */
+           
+        }
+
+        .item{
+            background-color: #f7786b;
+            padding: 30px;
+            /* margin: 20px; */
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+    
+       
+   
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+</body>
+</html>
